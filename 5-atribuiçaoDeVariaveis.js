@@ -23,7 +23,7 @@ console.log(contador);
 //declarando váriavel
 let idade;
 //atribuindo valor
-idade = 34;
-idade = idade + 1;
+idade = 29;
+idade += 1;
 console.log(idade);
 

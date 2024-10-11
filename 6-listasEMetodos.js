@@ -1,18 +1,26 @@
 console.log(`Trabalhando com listas`);
 
-const listaDeDestinos = new Array( //cria um array
+//cria um array
+const listaDeDestinos = new Array(
     "Salvador",
     "São Paulo",
+    "Recife",
     "Porto Alegre"
 );
-console.log(listaDeDestinos);
+console.log(`Lista de destinos: ${listaDeDestinos}`);
 
-listaDeDestinos.push("Florianópolis"); //adiciona um elemento na lista
-console.log(listaDeDestinos);
+//adiciona um elemento na lista
+listaDeDestinos.push("Florianópolis");
+console.log(`Adiciona um item: ${listaDeDestinos}`);
 
-listaDeDestinos.splice(0,1); //remove um elemento, a partir da posição 0, e 1 elemento
-console.log(listaDeDestinos);
+//remove um elemento da lista a partir do índice 0 e remove 1 elemento
+listaDeDestinos.splice(0,1);
+console.log(`Remove um item: ${listaDeDestinos}`);
 
-console.log(listaDeDestinos[1]); //imprime o elemento do indice 2
+//imprime o elemento do indice 1
+console.log("Imprimi o item do índice 1: " + listaDeDestinos[1]);
 
-
+//encontra o índice do elemento
+const indiceSaoPaulo = listaDeDestinos.indexOf("São Paulo");
+listaDeDestinos.splice(indiceSaoPaulo,1);
+console.log(`Remove São Paulo: ${listaDeDestinos}`);
